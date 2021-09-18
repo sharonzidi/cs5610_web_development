@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lecture 2, Ya ya</title>
+  <style>
+
+
+    .container {
+      height: 500px;
+      width: 100%;
+      display: flex;
+      background-color: antiquewhite;
+      /* the following are optional */
+      /* handle the order and direction of the items */
+      flex-direction:column;
+      /* handle the spacing of the elements */
+      /* justify-content: space-between; */
+
+
+    }
+
+    .square {
+      width: 20px;
+      height: 20px;
+      background-color: green;
+      border: purple 3px solid;
+      content: '';
+    }
+
+    .green {
+      background-color: green;
+      /* we can also control the size of individual elements, relative to the parent */
+      /* flex-grow: 2; */
+      /* or the location/spacing */
+      /* align-self: center; */
+    }
+
+    .black {
+      background-color: black;
+    }
+    .purple {
+      background-color: purple;
+    }
+    .orange {
+      background-color: orange;
+    }
+    .brown {
+      background-color: brown;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="square green" ></div>
+    <div class="square black" ></div>
+    <div class="square purple" ></div>
+    <div class="square orange" ></div>
+    <div class="square brown" ></div>
+  </div>
+
+</body>
+
+</html>

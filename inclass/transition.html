@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lecture 2, Ya ya</title>
+  <style>
+
+    :root {
+      --main-bg-color: teal;
+    }
+
+    #flippy-box {
+      width: 50px;
+      height: 50px;
+      background-color: var(--main-bg-color);
+      border: green 2px solid;
+      transform: rotate(0deg);
+      transition: 600ms;
+      /* animations are units of time, and CSS will linearly calculate all 
+      the frames from start to finish */
+      /* we can add an optional second argument that allows for more dynamic transitions */
+      
+      transition: 600ms ease-in;
+     
+    }
+
+    #flippy-box:hover {
+      transform: rotate(90deg);     
+      transition: 600ms ease-in;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="flippy-box"></div>
+
+</body>
+
+</html>
