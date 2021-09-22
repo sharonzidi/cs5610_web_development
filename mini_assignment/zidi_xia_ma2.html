@@ -9,7 +9,7 @@
       display: flex;
       flex-direction: row;
       flex-flow: wrap;
-      justify-content:space-around;
+      justify-content: space-around;
       align-items: center;
       left: 0;
       top: 0;
@@ -28,18 +28,25 @@
       background-color: #0081CF;
       top: 0;
       left: 0;
-      margin-bottom: 10px;
     }
 
-    .headerText{
-      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    .headerText {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 50px;
       font-style: italic;
       color: white;
-      font-display:initial;
+      font-display: initial;
+    }
+
+    .contentText {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+      color: white;
+      font-style: italic;
     }
 
     .content {
+      margin-top: 80px;
       position: relative;
     }
 
@@ -53,20 +60,16 @@
       margin: 10px;
       width: 100px;
       height: 100px;
-      background-color: peachpuff;
       content: '';
     }
 
-    /* @media(min-width: 600px) {
-      .square {
-        margin: 10px;
-        width: 100px;
-        height: 100px;
-        background-color: peachpuff;
-        border: purple 10px solid;
-        content: '';
-      }
-    } */
+    .table {
+      position: relative;
+      width: 100%;
+      background-color:#00C9A7;
+      margin: 10px;
+      text-align: center;
+    }
 
     .square:hover {
       background-color: #00C9A7;
@@ -81,10 +84,11 @@
     .purple {
       background-color: #D65DB1;
     }
-    
+
     .pink {
       background-color: #FF6F91;
     }
+
     .orange {
       background-color: #FF9671;
     }
@@ -92,6 +96,7 @@
     .yellow {
       background-color: #FFC75F;
     }
+
     .blue {
       background-color: #0081CF;
     }
@@ -100,8 +105,7 @@
       background-color: #00C9A7;
     }
 
-
-
+    .
   </style>
 </head>
 
@@ -115,8 +119,8 @@
 
       <div class="boxRow">
 
-        <div class="square darkpurple"></div>
-        <div class="square purple"></div>
+        <div class="square darkpurple contentText">Life is like</div>
+        <div class="square purple contentText">a box of chocolates.</div>
         <div class="square pink"></div>
         <div class="square orange"></div>
         <div class="square yellow"></div>
@@ -258,10 +262,25 @@
         <div class="square darkpurple"></div>
         <div class="square purple"></div>
         <div class="square pink"></div>
-        <div class="square orange"></div>
-        <div class="square yellow"></div>
+        <div class="square orange contentText">You never know</div>
+        <div class="square yellow contentText">what you're gonna get.</div>
 
       </div>
+
+      <table class="table contentText">
+        <tr>
+          <th>Emil</th>
+          <th>Phone number</th>
+          <th>Github</th>
+          <th>School email</th>
+        </tr>
+        <tr>
+          <td>zidi.seattle@gmail.com</td>
+          <td>425-394-6963</td>
+          <td>https://github.com/sharonzidi</td>
+          <td>xia.zid@northeastern.edu</td>
+        </tr>
+      </table>
 
     </div>
 
