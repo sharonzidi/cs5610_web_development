@@ -1,7 +1,16 @@
 #table tr {
+    border: 1px solid black;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #000000;
-    color: white;
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    width: 100vw;
+}
+
+td {
+    font-size: 14px;
+    padding: 20px;
 }
