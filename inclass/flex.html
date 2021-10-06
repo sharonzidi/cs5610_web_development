@@ -3,32 +3,40 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lecture 2, Ya ya</title>
+  <title>Lecture 3, flex</title>
   <style>
 
 
     .container {
-      height: 500px;
+      height: 100%;
       width: 100%;
       display: flex;
       background-color: antiquewhite;
       /* the following are optional */
       /* handle the order and direction of the items */
-      flex-direction:column;
+      flex-direction:row;
       /* handle the spacing of the elements */
-      /* justify-content: space-between; */
+      justify-content: space-between;
+      justify-items: center;
+
     }
 
     .square {
-      width: 20px;
-      height: 20px;
-      background-color: green;
-      border: purple 3px solid;
+      width: 80px;
+      height: 80px;
+      background-color: yellowgreen;
+      border: blue 3px solid;
       content: '';
+      flex-grow: 1;
+    }
+
+    #box2 {
+      order: -1;
+      flex-grow: 4;
     }
 
     .green {
-      background-color: green;
+      background-color: yellowgreen;
       /* we can also control the size of individual elements, relative to the parent */
       /* flex-grow: 2; */
       /* or the location/spacing */
@@ -36,16 +44,16 @@
     }
 
     .black {
-      background-color: black;
+      background-color: pink;
     }
     .purple {
-      background-color: purple;
+      background-color: paleturquoise;
     }
     .orange {
       background-color: orange;
     }
     .brown {
-      background-color: brown;
+      background-color: peachpuff;
     }
 
   </style>
@@ -55,11 +63,11 @@
 
   <div class="container">
 
-    <div class="square green" ></div>
-    <div class="square black" ></div>
-    <div class="square purple" ></div>
-    <div class="square orange" ></div>
-    <div class="square brown" ></div>
+    <div class="square green" >1</div>
+    <div class="square black" id="box2">2</div>
+    <div class="square purple" >3</div>
+    <div class="square orange" >4</div>
+    <div class="square brown" >5</div>
   </div>
 
 </body>

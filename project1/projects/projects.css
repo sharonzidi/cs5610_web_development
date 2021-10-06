@@ -1,0 +1,15 @@
+.project {
+    display: flex;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.project_details {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
