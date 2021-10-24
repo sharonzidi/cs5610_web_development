@@ -1,0 +1,118 @@
+.square {
+    position: relative;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: #00C9A7;
+    z-index: 1;
+    align-self: center;
+}
+
+.square:hover {
+    background-color: #FFC75F;
+    align-items: center;
+    transform: scale(2);
+    transition: 0.5s;
+}
+
+.grid-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    /* grid-template-areas: 
+"header header header"
+"sidebar content sidebar"
+"footer footer footer"; */
+}
+
+.grid-item1 {
+    /* grid-area: header; */
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #0081CF;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item2 {
+    /* grid-area: sidebar; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: #FF9671;
+}
+
+.grid-item3 {
+    /* grid-area: content; */
+    display: flex;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: aquamarine;
+}
+
+.grid-item4 {
+    /* grid-area: sidebar; */
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: #845EC2;
+}
+
+.grid-item5 {
+    /* grid-area: footer; */
+    grid-column-start: 1;
+    grid-column-end: 7;
+    background-color: #FF6F91;
+}
+
+.headerText {
+    color: white;
+    align-self: center;
+}
+
+.contentText {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    align-items: center;
+}
+
+.darkpurple {
+    background-color: #845EC2;
+}
+
+.purple {
+    background-color: #D65DB1;
+}
+
+.pink {
+    background-color: #FF6F91;
+}
+
+.orange {
+    background-color: #FF9671;
+}
+
+.yellow {
+    background-color: #FFC75F;
+}
+
+.blue {
+    background-color: #0081CF;
+}
+
+.green {
+    background-color: #00C9A7;
+}
