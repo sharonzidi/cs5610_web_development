@@ -1,0 +1,13 @@
+#square {
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}

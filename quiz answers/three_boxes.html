@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .parent-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      ul {
+        list-style-type: circle;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Introduction</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit,
+      arcu eu scelerisque pretium, leo dui bibendum velit, non dictum ligula
+      turpis vitae risus. Nullam sodales arcu eget euismod mattis. Nullam
+      finibus ligula urna, vel posuere erat mattis eu. In pulvinar eu arcu at
+      luctus. Donec nisl augue, sodales eget gravida eu, volutpat vel nisi.
+      Donec ornare laoreet tincidunt. Nunc sed fringilla ligula, sed porttitor
+      metus.
+    </p>
+    <br />
+    <ul>
+      <li>Ice Cream</li>
+      <li>Watermelon</li>
+      <li>Coconut</li>
+    </ul>
+    <br />
+    <div class="parent-container">
+      <div class="container">
+        <img
+          src="https://image.shutterstock.com/image-photo/whole-half-watermelon-isolated-on-600w-1422071948.jpg"
+        />
+        <div><span class="image-description">Food 1</span></div>
+      </div>
+      <div class="container">
+        <img
+          src="https://image.shutterstock.com/shutterstock/photos/201425834/display_1500/stock-photo-chocolate-vanilla-and-strawberry-ice-cream-in-the-cone-on-white-background-with-clipping-path-201425834.jpg"
+        />
+        <div><span class="image-description">Food 2</span></div>
+      </div>
+      <div class="container">
+        <img
+          src="https://image.shutterstock.com/shutterstock/photos/393850891/display_1500/stock-photo-coconut-with-half-and-leaves-on-white-background-393850891.jpg"
+        />
+        <div><span class="image-description">Food 3</span></div>
+      </div>
+    </div>
+  </body>
+</html>
